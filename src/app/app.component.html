@@ -1,0 +1,28 @@
+<h3 class="homepage">Lista de Alunos</h3>
+<!-- Criei um tabela com as colunas das informações que deveria ser exibidas em tela-->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+        <th class="colunas">Nome do Aluno</th>
+        <th class="colunas">Curso</th>
+        <th class="colunas">Data de Nascimento</th>
+        <th class="colunas">RU</th>
+        <th class="colunas">Email</th>
+        <th class="colunas">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Um laço for each que vai listando as informações do objeto aluno 
+            da listaDeAlunos do arquivo.ts de acordo com as colunas-->
+        <ng-container *ngFor="let aluno of listaDeAlunos">
+            <tr>
+                <td class="linhas">{{ aluno.nomeCompletoDoAluno }}</td>
+                <td class="linhas">{{ aluno.nomeDoCurso }}</td>
+                <td class="linhas">{{ aluno.dataDeNascimento}}</td>
+                <td class="linhas">{{ aluno.codigoRU }}</td>
+                <td class="linhas">{{ aluno.emailDoAluno }}</td>
+                <td class="linhas">{{ aluno.status }}</td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table>

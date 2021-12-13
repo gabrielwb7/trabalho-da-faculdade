@@ -1,0 +1,35 @@
+/* estilizei as colunas e as linhas da tabela, alinhando o texto e deixando as cores combinando*/
+.colunas 
+{
+    text-align: center;
+    background-color: cornflowerblue;
+    font-size: 12;
+    border-style: solid;
+    border-color: black;
+}
+
+
+.linhas
+{
+    text-align: center;
+    background-color: aliceblue;
+    border-style: solid;
+    border-color: black;
+}
+/*deixei o titulo centralizado na tela, alterei e aumentei o tamanho da fonte*/
+.homepage 
+{
+
+    text-align: center;
+    font-size: 25;
+    font-family: sans-serif;
+
+}
+/*Aumentei a distância da tabela referente ao topo da tela e alterei a cor*/
+table
+{
+    margin-top: 75px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: black;
+}
