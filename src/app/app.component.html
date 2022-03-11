@@ -1,6 +1,6 @@
-<h3 class="homepage">Lista de Alunos</h3>
+<h1 class="homepage">Lista de Alunos</h1>
 <!-- Criei um tabela com as colunas das informações que deveria ser exibidas em tela-->
-<table class="table table-bordered">
+<table id="content" #content class="table table-bordered">
     <thead>
         <tr>
         <th class="colunas">Nome do Aluno</th>
@@ -26,3 +26,6 @@
         </ng-container>
     </tbody>
 </table>
+<div>
+    <button style="background-color: gray;" class="btn btn-success btn-block" (click)="gerarPDF()">Download PDF</button>
+</div>
