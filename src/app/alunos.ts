@@ -37,7 +37,7 @@ export const alunos = [
    {
       id: 4,
       nomeCompletoDoAluno: "Daniel",
-      nomeDoCurso: "Lógistica",
+      nomeDoCurso: "Logística",
       dataDeNascimento: "12/03/1998",
       emailDoAluno: "daniel@daniel.com",
       codigoRU: "3350211",

@@ -15,6 +15,7 @@ export class AppComponent {
 
   title = 'gerenciador-de-alunos';
   listaDeAlunos = alunos;
+  public mostrar = false;
 
   constructor() {}
   
@@ -29,5 +30,19 @@ export class AppComponent {
       PDF.addImage(FILEURI, 'PNG', 0, position, fileWidth, fileHeight);
       PDF.save('relatorio.pdf');
     });
+  }
+
+  public gerarExcel() : void {
+    
+    const tableRows = document.querySelectorAll('tr');
+
+    const csvString = "data:text/csv;charset=utf-8," + Array.from(tableRows)
+        .map(row => Array.from(row.cells)
+            .map(cell => cell.textContent)
+            .join(',')
+    ).join('\n')
+
+    var encodedUri = encodeURI(csvString);
+    window.open(encodedUri);
   }
 }

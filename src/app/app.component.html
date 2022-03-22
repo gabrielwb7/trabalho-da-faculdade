@@ -1,5 +1,6 @@
 <h1 class="homepage">Lista de Alunos</h1>
 <!-- Criei um tabela com as colunas das informações que deveria ser exibidas em tela-->
+<div>
 <table id="content" #content class="table table-bordered">
     <thead>
         <tr>
@@ -26,6 +27,9 @@
         </ng-container>
     </tbody>
 </table>
-<div>
-    <button style="background-color: gray;" class="btn btn-success btn-block" (click)="gerarPDF()">Download PDF</button>
+<div style="text-align: center;" >
+    <button style="background-color: gray;" class="btn btn-primary" (click)="gerarPDF()">Download PDF</button>
+    <button style="background-color: gray; margin-left: 1cm;" type="button" class="btn btn-primary" (click)="gerarExcel()">Download Planilha</button>
 </div>
+</div>
+
